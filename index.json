@@ -1,0 +1,890 @@
+{
+  "catalogue": 1,
+  "publisher": "sidiom",
+  "serial": 1,
+  "issuedAt": "2026-11-20T15:26:36Z",
+  "keyId": "sidiom-2026a",
+  "drivers": {
+    "sidiom.amx": {
+      "name": {
+        "en": "AMX",
+        "ru": "AMX"
+      },
+      "system": "AMX",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.2.1",
+          "digest": "sha256:05547593ddd7067e9c3bbc7d83831b7e8480be40843a98d017a5298a3eeacef7",
+          "size": 29399,
+          "keyId": "sidiom-2026a",
+          "signature": "qJOAsM3qRv3eKwWvC3XGkLFNbs1QD8Hv1hOeQtsWULhIaNFpw+RY1lRAlw/fGpGdsVnJZuJJpQaGvggMYqepDA==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.amx/v0.2.1",
+            "name": "sidiom.amx-0.2.1.tgz",
+            "id": 1
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/amx"
+          },
+          "approvedSet": "sha256:a104485f05ed0740af60838d288ab69a7fb394955e24044a675979466898fb9e",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                1319
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                23
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "secret",
+              "handle": "username"
+            },
+            {
+              "kind": "secret",
+              "handle": "password"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.apc": {
+      "name": {
+        "en": "APC UPS",
+        "ru": "ИБП APC"
+      },
+      "system": "APC",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.1.2",
+          "digest": "sha256:89e474e1f148e740d8cf6861c08c500aec48d7c33e3eb37a785a577b0e378076",
+          "size": 34657,
+          "keyId": "sidiom-2026a",
+          "signature": "ehElHReg840OUtBjKDfc2G6JmYwJy+cdzUkKYC0tvondctfQoR4ggfjSA1vjQIyIkMyug52pyt1n91KGYTrOBg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.apc/v0.1.2",
+            "name": "sidiom.apc-0.1.2.tgz",
+            "id": 2
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/apc"
+          },
+          "approvedSet": "sha256:02c37b330454679c467cb437751b797b4da9d1f65c7c5b93d867e096502a77cd",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                161
+              ],
+              "protocol": "udp"
+            },
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                23
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "broadcast",
+              "port": 5162,
+              "peer": "$config.host"
+            },
+            {
+              "kind": "secret",
+              "handle": "community"
+            },
+            {
+              "kind": "secret",
+              "handle": "authPassword"
+            },
+            {
+              "kind": "secret",
+              "handle": "privPassword"
+            },
+            {
+              "kind": "secret",
+              "handle": "password"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.atlona": {
+      "name": {
+        "en": "Atlona",
+        "ru": "Atlona"
+      },
+      "system": "ATL",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.1.2",
+          "digest": "sha256:0b098b348c79daf788bd0672ab07a0e551b16a9052ea69ad1beee89b7c98dd04",
+          "size": 23316,
+          "keyId": "sidiom-2026a",
+          "signature": "ptUTYzxPeIsltmMVvy8oarpn8iDIauRja9gholN882lpIQPcB3T9DWiSHWfPili0Wjko0TKhuF/hKiyaDck8Cg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.atlona/v0.1.2",
+            "name": "sidiom.atlona-0.1.2.tgz",
+            "id": 3
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/atlona"
+          },
+          "approvedSet": "sha256:97dda4d267b4b1910b30a729d3c4b6ec9fce081cc8a931b7e7c183412b75d6fe",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                23,
+                230,
+                2323,
+                2001,
+                2002,
+                2003,
+                2004,
+                4001,
+                4002,
+                4003,
+                4004,
+                4005,
+                4006,
+                4007,
+                4008,
+                4999,
+                5000,
+                5001,
+                5002,
+                8899,
+                10001,
+                10002,
+                10003,
+                10004
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "secret",
+              "handle": "username"
+            },
+            {
+              "kind": "secret",
+              "handle": "password"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.bluos": {
+      "name": {
+        "en": "BluOS",
+        "ru": "BluOS"
+      },
+      "system": "BLU",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "digest": "sha256:2f39ff1ec811f7f192da66758b99e7b8e9931ab48afadbfce57f1fd46b3eb1ef",
+          "size": 16544,
+          "keyId": "sidiom-2026a",
+          "signature": "GZEPBbSY8OBCso0jp7yAfaTtaiNYj+V6GtgEZZpaPpi3gMFfFltfopf/6tBZfyaOjBnXBHaeq3m5BTEhfpmeBg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.bluos/v0.1.1",
+            "name": "sidiom.bluos-0.1.1.tgz",
+            "id": 4
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/bluos"
+          },
+          "approvedSet": "sha256:a7a2fa274156742b5fddf8938e7cb46860eddd8063e9c6bec2c72581c58550cb",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "lan",
+              "ports": [
+                11000
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.camera": {
+      "name": {
+        "en": "Camera",
+        "ru": "Камера"
+      },
+      "system": "CAM",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.3.1",
+          "digest": "sha256:2e75a874cb6539bc899398411d7a7ed7cd24256eee75b972d08729d19a598e5a",
+          "size": 28306,
+          "keyId": "sidiom-2026a",
+          "signature": "r20qjvFWqLjj4Kw7HIj2sBYQKkPcdVfa2b+PO6mQz+uf+K7aUIkfxJmJ6AtRvdhV/6CvhQtJIeHavgDmlPysCw==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.camera/v0.3.1",
+            "name": "sidiom.camera-0.3.1.tgz",
+            "id": 5
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/camera"
+          },
+          "approvedSet": "sha256:6b89695dcca011186e960f7067eea9311e5ec1a7115759fff1554b11b47f01d9",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                80,
+                2020,
+                8000,
+                8080
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "secret",
+              "handle": "password"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "changelog": {
+            "en": "- Declares the Gateway version it needs (`runtime.requires.gateway`), as every catalogue driver does."
+          },
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.demo-house": {
+      "name": {
+        "en": "Demo House",
+        "ru": "Демо-дом"
+      },
+      "system": "DEMO",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "1.0.1",
+          "digest": "sha256:99404d5bcbff25aa9c31bb5d8d118b28b2721575fc4026d8985e166c985bcbf0",
+          "size": 11392,
+          "keyId": "sidiom-2026a",
+          "signature": "EMCJmfqtzhvlsKtXEdpYGJQ2wiDX5h8J1WVyG40Rtsi7KOXeVtpkgVbigPHOUYB/3gisMm8sX4SgGE0RqxmbBg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.demo-house/v1.0.1",
+            "name": "sidiom.demo-house-1.0.1.tgz",
+            "id": 6
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/demo-house"
+          },
+          "approvedSet": "sha256:0dd4e33a4e9a1faf99d51fb51f830a7956f3cdf85e1e5873d2930e5c5805fa74",
+          "permissions": [
+            {
+              "kind": "time"
+            },
+            {
+              "kind": "event.publish",
+              "kinds": [
+                "pressed"
+              ]
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.dune": {
+      "name": {
+        "en": "Dune HD",
+        "ru": "Dune HD"
+      },
+      "system": "DUNE",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.1.1",
+          "digest": "sha256:38e99de2c2155619539cbd5bff7f2e894ed6e291bb76063025bc7903d2458466",
+          "size": 16680,
+          "keyId": "sidiom-2026a",
+          "signature": "cwgRV55PZUbnTND0HEWxpUaLiaNlfY4tnmL25w//y5IR2nzzJPg55DoQepQgEjNM1hewSxBc2BBLzKw4KKN9Aw==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.dune/v0.1.1",
+            "name": "sidiom.dune-0.1.1.tgz",
+            "id": 7
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/dune"
+          },
+          "approvedSet": "sha256:3d6947c3383f1e02da0ceb8c97ab42cb2198e6d71721f1f24b9167b06167142c",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                80,
+                11080
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.hdl-buspro": {
+      "name": {
+        "en": "HDL Buspro",
+        "ru": "HDL Buspro"
+      },
+      "system": "HDL",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.2.1",
+          "digest": "sha256:9d33e7d4cdf1059083ad7b6fdb7578f090d38053164f07983ebda9ef0725e466",
+          "size": 18238,
+          "keyId": "sidiom-2026a",
+          "signature": "YPRKKmnBPYpAR1rm+XXekHYxbVdBaliOZhO6OztdkIF8FyLoqgGH/po2M0C+UcDB0xEKX/MIMa9x+2kGcMobCQ==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.hdl-buspro/v0.2.1",
+            "name": "sidiom.hdl-buspro-0.2.1.tgz",
+            "id": 8
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/hdl-buspro"
+          },
+          "approvedSet": "sha256:f362130c38cdf2ffa53998511c3e52d18b7dfb0e7cd67d0c191f5e27dde58b05",
+          "permissions": [
+            {
+              "kind": "broadcast",
+              "port": 6000,
+              "peer": "$config.gateway"
+            },
+            {
+              "kind": "event.publish",
+              "kinds": [
+                "search.candidate"
+              ]
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.home-assistant": {
+      "name": {
+        "en": "Home Assistant",
+        "ru": "Home Assistant"
+      },
+      "system": "HASS",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "1.3.2",
+          "digest": "sha256:101be7b90f881dd84ad33817f8dc485a0a5bdd214e0c7277ff1cbfd17990b28c",
+          "size": 19139,
+          "keyId": "sidiom-2026a",
+          "signature": "xNQ6j+ZQMhL13EQbDI8skjYS8HmUEcgB/ZuHY0bC3fHJPrElqKUOTpf1NmIJcrYFQxxITQT6+hHcqifkMIVKCw==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.home-assistant/v1.3.2",
+            "name": "sidiom.home-assistant-1.3.2.tgz",
+            "id": 9
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/home-assistant"
+          },
+          "approvedSet": "sha256:599eb962b61f6da84696cd6ed22db4bd40283199b7df6a1b6efbb06ce77b2235",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                8123,
+                18123
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                443,
+                8123
+              ],
+              "protocol": "tls"
+            },
+            {
+              "kind": "secret",
+              "handle": "token"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.knx-ip": {
+      "name": {
+        "en": "KNX IP interface",
+        "ru": "KNX IP-интерфейс"
+      },
+      "system": "KNX",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.5.6",
+          "digest": "sha256:cb17a4aeaf77610175b78cc1ae29a1dde97c2598890e3d4a901b2f1c474d1beb",
+          "size": 74760,
+          "keyId": "sidiom-2026a",
+          "signature": "amNMgYieuvheSyNVd8C+96TEfAc1lKPrqxjBJHzdNZgRj2cxzsPNMjT7spiTpsh2Y3+3J4xM4ir3nJkpIChGDg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.knx-ip/v0.5.6",
+            "name": "sidiom.knx-ip-0.5.6.tgz",
+            "id": 10
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/knx-ip"
+          },
+          "approvedSet": "sha256:321c69b7b24eb639f26967f2253811ee10dff536bbc462290665265f6d5092ac",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                3671
+              ],
+              "protocol": "udp"
+            },
+            {
+              "kind": "time"
+            },
+            {
+              "kind": "event.publish",
+              "kinds": [
+                "telegram",
+                "gap"
+              ]
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.sony-projector": {
+      "name": {
+        "en": "Sony projector",
+        "ru": "Проектор Sony"
+      },
+      "system": "SNY",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.1.2",
+          "digest": "sha256:9e19bc8f2249cc0846992b7708762830224f3637fb4e16bdd8c6aa858e52e7b5",
+          "size": 28218,
+          "keyId": "sidiom-2026a",
+          "signature": "mx7zfbsmI9kO1fTKnhBqi7Rcw2u2WHHm8YJmgP29P0soRhSLj9Vj5cKJeZwCzv0u7WQIaG2yONVaxnqK9e89Bg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.sony-projector/v0.1.2",
+            "name": "sidiom.sony-projector-0.1.2.tgz",
+            "id": 11
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/sony-projector"
+          },
+          "approvedSet": "sha256:acfa222f3a8f9b9bb278ed01d091c7a6b2621971cb32b2fbc9189922a6680876",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                53595,
+                53484,
+                4352
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "secret",
+              "handle": "password"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.sony-tv": {
+      "name": {
+        "en": "Sony TV",
+        "ru": "Телевизор Sony"
+      },
+      "system": "STV",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.1.5",
+          "digest": "sha256:47059452e1a38b6f328578702e85e0c0d7a3325cbb29ddc1dec26dae25f5eb0a",
+          "size": 18446,
+          "keyId": "sidiom-2026a",
+          "signature": "EEPDJ3z1l5kWWGdCuRatlzFmpUnJG39ixaW9Q8ig3Vamq8FU/yUM3p7vgTfvk86x9GIMxZ/SFhhQiUqpg+LZAQ==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.sony-tv/v0.1.5",
+            "name": "sidiom.sony-tv-0.1.5.tgz",
+            "id": 12
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/sony-tv"
+          },
+          "approvedSet": "sha256:4f12cc67a05db4443f3a5b301ee66f667774e57f6b0f8f61b9fa20fa1cfc37e3",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                80,
+                20060
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "secret",
+              "handle": "psk"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.tahoma": {
+      "name": {
+        "en": "Somfy TaHoma",
+        "ru": "Somfy TaHoma"
+      },
+      "system": "TAHO",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "1.4.4",
+          "digest": "sha256:715aa7c67a0a7d224ca07fc67352f732cd4bb786c60844d1e2594052dc282d3c",
+          "size": 15350,
+          "keyId": "sidiom-2026a",
+          "signature": "clqDb4FdGCsC9QkQg5EBVQDD0p/6/hxjHgrRzoDmGjbbDAJkjM0vzgo+7EEX2MvEFpEhchoQu23uEk0/uKOICg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.tahoma/v1.4.4",
+            "name": "sidiom.tahoma-1.4.4.tgz",
+            "id": 13
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/tahoma"
+          },
+          "approvedSet": "sha256:63d7bc72f146a0dee9cac9d4ec48cb2df8c99e741ba735756ffe2361025fe910",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                8443
+              ],
+              "protocol": "tls",
+              "tlsCa": "assets/overkiz-root-ca-2048.crt",
+              "tlsServerName": "$config.boxName"
+            },
+            {
+              "kind": "secret",
+              "handle": "token"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.weather-met-norway": {
+      "name": {
+        "en": "Weather (MET Norway)",
+        "ru": "Погода (MET Norway)"
+      },
+      "system": "MET",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.4.2",
+          "digest": "sha256:d198a424433d40e05f3be04fa6a928e7bbcb258649bbef54f060d34c9504ee7c",
+          "size": 13335,
+          "keyId": "sidiom-2026a",
+          "signature": "hYpsv2lyM/kU8WxmL8qET/VUF4LcWZAKBXWzcjHRyQYNj1ugKWRJx6zghfmwqnNKQD9L3vM29Pp5yC1/KM8OCA==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.weather-met-norway/v0.4.2",
+            "name": "sidiom.weather-met-norway-0.4.2.tgz",
+            "id": 14
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/weather-met-norway"
+          },
+          "approvedSet": "sha256:0c48ade8563eafd307205066d5b16e2d616bd85c16764b8a014b8b6c00b507c9",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.server",
+              "ports": [
+                443
+              ],
+              "protocol": "tls"
+            },
+            {
+              "kind": "net.connect",
+              "to": "$config.geocoder",
+              "ports": [
+                443
+              ],
+              "protocol": "tls"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.weather-open-meteo": {
+      "name": {
+        "en": "Weather (Open-Meteo)",
+        "ru": "Погода (Open-Meteo)"
+      },
+      "system": "OMET",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.3.2",
+          "digest": "sha256:33f3ed09ce2593c3fcf6b9b3a48e18e3b964fda4cb620e8440480678ec715c50",
+          "size": 8062,
+          "keyId": "sidiom-2026a",
+          "signature": "3KG8GayqagDCuzmfO+V65n6RTD/6Khnfq31EQcMO549k7vOaMaJO8y3Etk7zqflPMQWtyITbvhQEZ726KQBrDg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.weather-open-meteo/v0.3.2",
+            "name": "sidiom.weather-open-meteo-0.3.2.tgz",
+            "id": 15
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/weather-open-meteo"
+          },
+          "approvedSet": "sha256:0c48ade8563eafd307205066d5b16e2d616bd85c16764b8a014b8b6c00b507c9",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.server",
+              "ports": [
+                443
+              ],
+              "protocol": "tls"
+            },
+            {
+              "kind": "net.connect",
+              "to": "$config.geocoder",
+              "ports": [
+                443
+              ],
+              "protocol": "tls"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    },
+    "sidiom.yamaha": {
+      "name": {
+        "en": "Yamaha",
+        "ru": "Yamaha"
+      },
+      "system": "YAM",
+      "tier": "script",
+      "versions": [
+        {
+          "version": "0.1.4",
+          "digest": "sha256:49a28299d45734d56f4ff313b841cbfd39ea1b33a222941b500fe3bae4d644fc",
+          "size": 20762,
+          "keyId": "sidiom-2026a",
+          "signature": "B+DMpmSXajU3Pz38U+NXkwJGNtipthJfUgYDPUNi5gxzEGX/yuxIE5MbyqqTmDpI+WHvO1wkurvrmt5dL2H1DQ==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.yamaha/v0.1.4",
+            "name": "sidiom.yamaha-0.1.4.tgz",
+            "id": 16
+          },
+          "source": {
+            "commit": "c34c95aa010e2ff1dbbd967cfd39506b3b1d3c1f",
+            "path": "drivers/yamaha"
+          },
+          "approvedSet": "sha256:327f043470bd2ed2d54701844b3f27cae16b05e40983898842fe5e1bff385c00",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "$config.host",
+              "ports": [
+                80,
+                50000
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "broadcast",
+              "port": 41100,
+              "peer": "$config.host"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-20T15:26:36Z",
+          "channel": "stable",
+          "yanked": null
+        }
+      ]
+    }
+  }
+}
