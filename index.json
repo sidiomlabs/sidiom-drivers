@@ -1,8 +1,8 @@
 {
   "catalogue": 1,
   "publisher": "sidiom",
-  "serial": 1,
-  "issuedAt": "2026-11-20T15:26:36Z",
+  "serial": 2,
+  "issuedAt": "2026-11-22T20:58:47Z",
   "keyId": "sidiom-2026a",
   "drivers": {
     "sidiom.amx": {
@@ -631,6 +631,47 @@
       "system": "STV",
       "tier": "script",
       "versions": [
+        {
+          "version": "0.2.0",
+          "digest": "sha256:6fcff8da1f4bd8de554aee06f97261ae459e5218a754d3af5f924a2cabc7a6f3",
+          "size": 23590,
+          "keyId": "sidiom-2026a",
+          "signature": "XiVyY6kpLfzjX15yWK2OTQB/gedp2vH+sF2qLtt6RqHhY36FtSlxia0s4o9wK1pr6diBCm1gkhA7y4sLTAorDA==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.sony-tv/v0.2.0",
+            "name": "sidiom.sony-tv-0.2.0.tgz",
+            "id": 17
+          },
+          "source": {
+            "commit": "c5be0a0a8eb3bd3723e8ad82d4220441981aa4b1",
+            "path": "drivers/sony-tv"
+          },
+          "approvedSet": "sha256:d43101c540153619cf20136d74c29fd4350d24470068e8e1ce9e4b19a58f9826",
+          "permissions": [
+            {
+              "kind": "net.connect",
+              "to": "lan",
+              "ports": [
+                80,
+                20060
+              ],
+              "protocol": "tcp"
+            },
+            {
+              "kind": "secret",
+              "handle": "psk"
+            },
+            {
+              "kind": "time"
+            }
+          ],
+          "publishedAt": "2026-11-22T20:58:47Z",
+          "channel": "stable",
+          "yanked": null
+        },
         {
           "version": "0.1.5",
           "digest": "sha256:47059452e1a38b6f328578702e85e0c0d7a3325cbb29ddc1dec26dae25f5eb0a",
