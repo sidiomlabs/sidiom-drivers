@@ -1,8 +1,8 @@
 {
   "catalogue": 1,
   "publisher": "sidiom",
-  "serial": 4,
-  "issuedAt": "2026-11-24T11:35:50Z",
+  "serial": 5,
+  "issuedAt": "2026-11-24T11:39:42Z",
   "keyId": "sidiom-2026a",
   "drivers": {
     "sidiom.amx": {
@@ -420,6 +420,42 @@
       "system": "HDL",
       "tier": "script",
       "versions": [
+        {
+          "version": "0.3.1",
+          "digest": "sha256:a154fcc9ed77fd0b896cf72b02d4037a72596239d4c6c2aca91e7d6bc92e3d2c",
+          "size": 39521,
+          "keyId": "sidiom-2026a",
+          "signature": "QlYSkqEiA0PRtI61ftZEla/mhFaez2xpWeVFZ0EP883uxmFmDLaSuysf8NgEkojQDOkWACmCthQ3oAhFQd0gBg==",
+          "requires": {
+            "gateway": ">=0.2.105-0"
+          },
+          "asset": {
+            "release": "sidiom.hdl-buspro/v0.3.1",
+            "name": "sidiom.hdl-buspro-0.3.1.tgz",
+            "id": 20
+          },
+          "source": {
+            "commit": "abb29c38158b227f196ad12e30d35eb2774ab8fc",
+            "path": "drivers/hdl-buspro"
+          },
+          "approvedSet": "sha256:f362130c38cdf2ffa53998511c3e52d18b7dfb0e7cd67d0c191f5e27dde58b05",
+          "permissions": [
+            {
+              "kind": "broadcast",
+              "port": 6000,
+              "peer": "$config.gateway"
+            },
+            {
+              "kind": "event.publish",
+              "kinds": [
+                "search.candidate"
+              ]
+            }
+          ],
+          "publishedAt": "2026-11-24T11:39:42Z",
+          "channel": "stable",
+          "yanked": null
+        },
         {
           "version": "0.3.0",
           "digest": "sha256:159223c83ed7521219698b563fe5ca271ef641be4dfb9ad4a0c21120bf81b5ed",
